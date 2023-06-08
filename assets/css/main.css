@@ -1661,3 +1661,165 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		/* portrait */
+
+		.circle-image {
+			position: relative;
+			width: 300px; /* Adjust the width and height as needed */
+			height: 300px;
+			border-radius: 50%;
+			overflow: hidden;
+			transition: transform 0.5s; /* Add transition for smooth animation */
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.1); /* Add the enhanced 3D shadow effect */
+		}
+		
+		.circle-image:hover {
+			transform: translate(0, -10px); /* Adjust the translation values as desired */
+			box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 20px 20px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.3); /* Modify the shadow effect on hover */
+		}
+		
+		.circle-image::before {
+			content: "";
+			position: absolute;
+			top: -10px; /* Adjust the top, left, right, and bottom values for desired edge size */
+			left: -10px;
+			right: -10px;
+			bottom: -10px;
+			background: inherit;
+			border-radius: inherit;
+			filter: blur(10px); /* Adjust the blur amount as desired */
+		}
+		
+		.circle-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		/* portrait */
+
+		
+		/* header */
+		.typing-effect {
+			overflow: hidden; /* Ensures text is not visible initially */
+			white-space: nowrap; /* Prevents line breaks */
+			border-right: 2px solid #f0f0f0; /* Cursor effect */
+			width: 0; /* Text starts with 0 width */
+			animation: typing 4s steps(40) 1s 1 normal both;
+		  }
+		
+		  @keyframes typing {
+			from {
+			  width: 0;
+			}
+			to {
+			  width: 100%;
+			}
+		  }
+		
+		  /* After typing animation, keep the text visible for 10 seconds */
+		  .typing-effect::after {
+			content: "";
+			animation: pause 5s ;
+		  }
+		
+		  @keyframes pause {
+			0%, 100% {
+			  width: 100%;
+			}
+			50% {
+			  width: 0;
+			}
+		  }
+		
+		/* header */
+
+		
+
+		.major {
+			text-align: center;
+			transition: color 0.3s ease;
+			margin: 0; /* Add this line to remove default margin */
+		}
+
+		.major:hover {
+			color: rgb(165, 165, 196); /* Adjust the color to your preference */
+		}
+
+		.education-section {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	
+		.education-title {
+			margin-bottom: 1rem;
+		}
+	
+		.education-subtitle {
+			margin-bottom: 0.5rem;
+			color: #e6dede;
+		}
+
+		.content {
+			text-align: center;
+		}
+	
+		.inner {
+			animation: bounce 1s infinite alternate;
+		}
+	
+		@keyframes bounce {
+			0% {
+				transform: translateY(0);
+			}
+			100% {
+				transform: translateY(-20px);
+			}
+		}
+	
+		.animate-bounce {
+			display: inline-block;
+		}
+
+		.centered-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 300px; /* Adjust the desired height */
+			margin-top: 50px; /* Adjust the top margin as desired */
+			margin-bottom: 50px; /* Adjust the bottom margin as desired */
+		}
+
+		.centered-image img {
+			width: 250%;
+			height: 100%;
+			object-fit: contain;
+			border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the shadow properties as needed */
+		}
+
+		.centered-image img:hover {
+			transform: scale(1.1); /* Adjust the scale value to control the amount of movement */
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+		}
+		.major {
+				text-align: center;
+				margin: 0; /* Remove any default margin */
+			}
+
+		.centered-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 300px; /* Adjust the desired height */
+			margin-top: 50px; /* Adjust the top margin as desired */
+			margin-bottom: 50px; /* Adjust the bottom margin as desired */
+		}
+
+		.centered-image img {
+			width: auto;
+			height: 100%;
+			object-fit: contain;
+			border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
+		}

@@ -19,77 +19,20 @@
 
 				<!-- Header -->
 					<header id="header">
-						<!-- <div class="logo">
-							<span class="icon fa-gem"></span>
-						</div> -->
-						<style>
-							.circle-image {
-								position: relative;
-								width: 300px; /* Adjust the width and height as needed */
-								height: 300px;
-								border-radius: 50%;
-								overflow: hidden;
-								transition: transform 0.5s; /* Add transition for smooth animation */
-							}
-						
-							.circle-image:hover {
-								transform: translate(0, -10px); /* Adjust the translation values as desired */
-							}
-						
-							.circle-image::before {
-								content: "";
-								position: absolute;
-								top: -10px; /* Adjust the top, left, right, and bottom values for desired edge size */
-								left: -10px;
-								right: -10px;
-								bottom: -10px;
-								background: inherit;
-								border-radius: inherit;
-								filter: blur(10px); /* Adjust the blur amount as desired */
-							}
-						
-							.circle-image img {
-								width: 100%;
-								height: 100%;
-								object-fit: cover;
-							}
-						</style>
+						<!-- <img src="images/portrait.JPEG" alt="Circle Image"> -->
+
 						<div class="circle-image">
 							<img src="images/portrait.JPEG" alt="Circle Image">
 						</div>
-						
-						
-						
-						
+
 						<div class="content">
 							<div class="inner">
-								<h1 class="animate-bounce">Hi, I'm Basem Moustafa 👋</h1>
-								<p>An aspiring Software Engineer.</p>
+							  <h1 class="typing-effect">Hi, I'm Basem Moustafa 👋</h1>
+							  <p>An aspiring Software Engineer.</p>
 							</div>
-						</div>
+						  </div>
 						
-						<style>
-							.content {
-								text-align: center;
-							}
-						
-							.inner {
-								animation: bounce 1s infinite alternate;
-							}
-						
-							@keyframes bounce {
-								0% {
-									transform: translateY(0);
-								}
-								100% {
-									transform: translateY(-20px);
-								}
-							}
-						
-							.animate-bounce {
-								display: inline-block;
-							}
-						</style>
+						  
 						<nav>
 							<ul>
 								<li><a href="#intro">Me 👨‍💻</a></li>
@@ -105,23 +48,7 @@
 					<div id="main">
 
 						<!-- Intro -->
-						<article id="intro">
-							<style>
-								.education-section {
-									text-align: center;
-									margin-bottom: 2rem;
-								}
-							
-								.education-title {
-									margin-bottom: 1rem;
-								}
-							
-								.education-subtitle {
-									margin-bottom: 0.5rem;
-									color: #e6dede;
-								}
-							</style>
-							
+						<article id="intro">					
 							<div class="education-section">
 								<h2 class="major">Education 👨‍💻</h2>
 								<h3 class="education-title">University of California, Berkeley</h3>
@@ -175,80 +102,21 @@
 								<li>Documentation</li>
 								<li>Engaging Presentation</li>
 							</ul>
-						
-							<style>
-								.major {
-									text-align: center;
-									transition: color 0.3s ease;
-									margin: 0; /* Add this line to remove default margin */
-								}
-						
-								.major:hover {
-									color: rgb(165, 165, 196); /* Adjust the color to your preference */
-								}
-							</style>
+					
 						</article>
 						
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Version Control System</h2>
-								<style>
-									.centered-image {
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										height: 300px; /* Adjust the desired height */
-										margin-top: 50px; /* Adjust the top margin as desired */
-										margin-bottom: 50px; /* Adjust the bottom margin as desired */
-									}
-							
-									.centered-image img {
-										width: 250%;
-										height: 100%;
-										object-fit: contain;
-										border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
-										transition: transform 0.3s ease, box-shadow 0.3s ease;
-										box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the shadow properties as needed */
-									}
-							
-									.centered-image img:hover {
-										transform: scale(1.1); /* Adjust the scale value to control the amount of movement */
-										box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
-									}
-									.major {
-											text-align: center;
-											margin: 0; /* Remove any default margin */
-										}
-								</style>
 								<div class="centered-image">
 									<img src="images/version.jpeg" alt="Rectangular Image">
 								</div>
 								<!-- <span class="image main"><img src="images/versioncontrolsystem.jpeg" alt="" /></span> -->
 								<p style="text-align: center;">A version control system in Java that offers a comprehensive set of 13 commands to manage code repositories effectively. The system includes essential operations such as initializing a repository, adding files, committing changes, merging branches, creating new branches, and switching between them. </p>
 								<p style="text-align: center;">To ensure the program's persistence and support local file operations, I designed a set of classes representing the internal structures during execution. These classes mirror the parallel representation of the code repository as local files.</p>
-
-
-		
-
 								<h2 class="major" style="text-align: center;">Encypted File Sharing System</h2>
-								<style>
-									.centered-image {
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										height: 300px; /* Adjust the desired height */
-										margin-top: 50px; /* Adjust the top margin as desired */
-										margin-bottom: 50px; /* Adjust the bottom margin as desired */
-									}
-							
-									.centered-image img {
-										width: auto;
-										height: 100%;
-										object-fit: contain;
-										border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
-									}
-								</style>
+				
 								<div class="centered-image">
 									<img src="images/encrypted.jpeg" alt="Rectangular Image">
 								</div>
@@ -258,23 +126,7 @@
 								<p style="text-align: center;">The system offers user registration, login, and multiple session management features, allowing seamless sharing, receiving, and revoking of files even when users are offline. By leveraging RSA (Rivest-Shamir-Adleman) encryption, Argon2 password hashing, and HMAC, the system establishes a high level of security, rendering it computationally infeasible for attackers to recover information, modify files undetected, or impersonate users with control over the storage server.</p>
 
 								<h2 class="major" style="text-align: center;">Relational Database</h2>
-								<style>
-									.centered-image {
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										height: 300px; /* Adjust the desired height */
-										margin-top: 50px; /* Adjust the top margin as desired */
-										margin-bottom: 50px; /* Adjust the bottom margin as desired */
-									}
-							
-									.centered-image img {
-										width: auto;
-										height: 100%;
-										object-fit: contain;
-										border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
-									}
-								</style>
+								
 								<div class="centered-image">
 									<img src="images/database.jpeg" alt="Rectangular Image">
 								</div>
@@ -290,21 +142,7 @@
 
 								<h2 class="major" style="text-align: center;">Enigma Machine</h2>
 								<style>
-									.centered-image {
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										height: 300px; /* Adjust the desired height */
-										margin-top: 50px; /* Adjust the top margin as desired */
-										margin-bottom: 50px; /* Adjust the bottom margin as desired */
-									}
-							
-									.centered-image img {
-										width: auto;
-										height: 100%;
-										object-fit: contain;
-										border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
-									}
+
 								</style>
 								<div class="centered-image">
 									<img src="images/enigma.jpeg" alt="Rectangular Image">
@@ -316,23 +154,7 @@
 
 
 								<h2 class="major" style="text-align: center;">AI Checkerboard Game</h2>
-								<style>
-									.centered-image {
-										display: flex;
-										justify-content: center;
-										align-items: center;
-										height: 300px; /* Adjust the desired height */
-										margin-top: 50px; /* Adjust the top margin as desired */
-										margin-bottom: 50px; /* Adjust the bottom margin as desired */
-									}
 							
-									.centered-image img {
-										width: auto;
-										height: 100%;
-										object-fit: contain;
-										border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
-									}
-								</style>
 								<div class="centered-image">
 									<img src="images/checker.png" alt="Rectangular Image">
 								</div>
