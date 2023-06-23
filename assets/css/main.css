@@ -1823,3 +1823,12 @@ input, select, textarea {
 			object-fit: contain;
 			border-radius: 10px; /* Adjust the border-radius value to control the roundness of the edges */
 		}
+
+		/* .linkedin-text {
+			font-size: 16px;
+		  } */
+		  
+		  .in-text {
+			font-size: 16px; /* Adjust the font size as desired */
+		  }
+		  
