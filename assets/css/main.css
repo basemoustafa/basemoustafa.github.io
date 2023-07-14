@@ -1840,6 +1840,8 @@ input, select, textarea {
 			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		}
 		
+		/* ================================ */
+
 		.education-section {
 			text-align: center;
 		}
@@ -1858,6 +1860,9 @@ input, select, textarea {
 			animation: slide-up 1s ease-in-out;
 		}
 		
+		
+		/* ================================ */
+
 		.course-list,
 		.language-list,
 		.technology-list,
@@ -1910,5 +1915,26 @@ input, select, textarea {
 			100% {
 				transform: scale(1);
 			}
+		}
+		
+		.course-list li,
+		.language-list li,
+		.technology-list li,
+		.skill-list li {
+			background-color: rgba(238, 238, 238, 0.367);
+			color: #ffffff;
+			border-radius: 4px;
+			padding: 10px;
+			margin: 5px;
+			font-size: 16px;
+			animation: scale-in 0.5s ease-in-out;
+			transition: transform 0.3s ease;
+		}
+		
+		.course-list li:hover,
+		.language-list li:hover,
+		.technology-list li:hover,
+		.skill-list li:hover {
+			transform: translateY(-5px);
 		}
 		
