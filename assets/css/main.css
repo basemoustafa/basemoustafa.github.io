@@ -1757,7 +1757,7 @@ input, select, textarea {
 	
 		.education-subtitle {
 			margin-bottom: 0.5rem;
-			color: #e6dede;
+			color: #ffffff;
 		}
 
 		.content {
@@ -1935,6 +1935,27 @@ input, select, textarea {
 		.language-list li:hover,
 		.technology-list li:hover,
 		.skill-list li:hover {
+			transform: translateY(-5px);
+		}
+		
+		.project-bubble {
+			background-color: rgba(238, 238, 238, 0.113);
+			border-radius: 10px;
+			padding: 20px;
+			margin-bottom: 20px;
+		  }
+		  .education-bubble {
+			background-color: rgba(238, 238, 238, 0.367);
+			color: #ffffff;
+			border-radius: 4px;
+			padding: 10px;
+			margin: 5px;
+			font-size: 16px;
+			animation: scale-in 0.5s ease-in-out;
+			transition: transform 0.3s ease;
+		}
+		
+		.education-bubble:hover {
 			transform: translateY(-5px);
 		}
 		
