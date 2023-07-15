@@ -2046,7 +2046,7 @@ body.is-preload #footer {
 .language-list li,
 .technology-list li,
 .skill-list li {
-  background-color: rgba(238, 238, 238, 0.367);
+  background-color: rgba(238, 238, 238, 0.113);
   color: #ffffff;
   border-radius: 4px;
   padding: 10px;
@@ -2070,7 +2070,7 @@ body.is-preload #footer {
   margin-bottom: 20px;
 }
 .education-bubble {
-  background-color: rgba(238, 238, 238, 0.367);
+  background-color: rgba(238, 238, 238, 0.113);
   color: #ffffff;
   border-radius: 4px;
   padding: 10px;
